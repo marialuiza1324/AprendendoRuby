@@ -11,17 +11,17 @@ puts "Agora quero inverter a minha idade, mas números não se invertem, então 
 puts "\nEu também posso converter dados em número usando '.to_i' e em array, usando'to._a'"
 
 puts "Agora é com você! \nQual o seu nome?"
-nome2 = gets
-puts "Olá #{nome2}! Digite um número" 
-num1 = gets
+nome2 = gets.strip
+puts "Olá #{nome2}! Digite um número"
+num1 = gets.strip
 puts "Outro número"
-num2 = gets
+num2 = gets.strip
 puts "E um último número"
-num3 = gets
+num3 = gets.strip
 
 array = [num1, num2, num3]
 
 puts "\nO maior desses número é #{array.max}"
-puts "Agora vamos ordená-los para ficar mais bonito #{array.sort!}"
+puts "Agora vamos ordená-los para ficar mais bonito #{array.sort}"
 
 puts " Tenho a frase '#{frase}', mas e seu eu trocar meu nome com o seu? '#{frase.gsub(nome, nome2)}'"
